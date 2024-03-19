@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+        background-image: url("Images/Backdrop.png");
+        background-size: cover;
+        background-position: center; /* Optional: center the image */
+        height: 100vh; /* Optional: Set the height to 100 viewport height */
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 50px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: xx-large;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .25s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #2596be;
+}
+
+.about-heading {
+    margin-top: 5em; /* Adjust spacing as needed */
+}
+
+.h1 {
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+    padding-top: 50px; /* Adjust the value for the indentation you want */
+}
+
+.h2 {
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-indent: 2em;
+    font-size: 13pt;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+}
+
+.h3 {
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+    padding-top: 10px; /* Adjust the value for the indentation you want */
+}
+
+.h4 {
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-indent: 2em;
+    font-size: 13pt;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+}
